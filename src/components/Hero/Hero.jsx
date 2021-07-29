@@ -1,8 +1,8 @@
-import React, { useContext, useState, useEffect } from 'react';
-import { Container } from 'react-bootstrap';
-import Fade from 'react-reveal/Fade';
-import { Link } from 'react-scroll';
-import PortfolioContext from '../../context/context';
+import React, { useContext, useState, useEffect } from "react";
+import { Container } from "react-bootstrap";
+import Fade from "react-reveal/Fade";
+import { Link } from "react-scroll";
+import PortfolioContext from "../../context/context";
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
@@ -20,23 +20,41 @@ const Header = () => {
       setIsDesktop(false);
     }
   }, []);
-
+  console.log(title);
   return (
     <section id="hero" className="jumbotron">
       <Container>
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-          <h1 className="hero-title">
-            {title || 'Hey, Im'} <span className="text-color-main">{name || ' Reid Fuhrman'}</span>
-            <br />
-            {subtitle ||
-              "I'm a self-taught web developer who has a passion for learning to and building beautiful, useful things."}
-          </h1>
+        <Fade
+          left={isDesktop}
+          bottom={isMobile}
+          duration={1000}
+          delay={500}
+          distance="30px"
+        >
+          <div className="title-and-image-container">
+            <div className="hero-text">
+              <h1 className="hero-title">
+                {title} <br></br>
+                <span className="text-color-main">{name}</span>
+              </h1>
+              <p className="hero-subtitle">{subtitle}</p>
+            </div>
+            <div className="meteor-container">
+              <div className="meteor"></div>
+            </div>
+          </div>
         </Fade>
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+        <Fade
+          left={isDesktop}
+          bottom={isMobile}
+          duration={1000}
+          delay={1000}
+          distance="30px"
+        >
           <p className="hero-cta">
             <span className="cta-btn cta-btn--hero">
               <Link to="about" smooth duration={1000}>
-                {cta || 'Know more'}
+                {cta || "Know more"}
               </Link>
             </span>
           </p>
