@@ -7,6 +7,29 @@ export const headData = {
   description: '', // e.g: Welcome to my website
 };
 
+// NAVBAR DATA
+
+export const navbarData = {
+  navlinks: [
+    {
+      name: 'Hero',
+      link: '/#hero',
+    },
+    {
+      name: 'Projects',
+      link: '/#projects',
+    },
+    {
+      name: 'About',
+      link: '/#about',
+    },
+    {
+      name: 'Contact',
+      link: '/#contact',
+    },
+  ],
+};
+
 // HERO DATA
 export const heroData = {
   title: "Hey, I'm",
