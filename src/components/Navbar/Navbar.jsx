@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Link } from 'gatsby';
 import PortfolioContext from '../../context/context';
 
@@ -6,19 +6,25 @@ function Navbar() {
   const { navbar } = useContext(PortfolioContext);
   const { navlinks } = navbar;
 
-  const nav = document.querySelector('.nav-bar');
+  useEffect(() => {
+    const nav = document.querySelector('.nav-bar'); // document is not available during server-side rendering, so put in a useEffect()
 
-  const topOfNav = nav && nav.offsetTop;
+    const topOfNav = nav && nav.offsetTop;
 
-  function fixNav() {
-    if (window.scrollY >= topOfNav) {
-      document.body.classList.add('fixed-nav');
-    } else {
-      document.body.classList.remove('fixed-nav');
+    function fixNav() {
+      if (window.scrollY >= topOfNav) {
+        document.body.classList.add('fixed-nav');
+      } else {
+        document.body.classList.remove('fixed-nav');
+      }
     }
-  }
 
-  window.addEventListener('scroll', fixNav);
+    window.addEventListener('scroll', fixNav);
+
+    return () => {
+      document.removeEventListener('scroll', fixNav);
+    };
+  }, []);
 
   return (
     <nav className="nav-bar">
