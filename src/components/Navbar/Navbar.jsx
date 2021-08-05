@@ -30,8 +30,8 @@ function Navbar() {
     <nav className="nav-bar">
       <ul className="nav-links">
         {navlinks && // if(navlinks is true) { *** display the array *** }
-          navlinks.map(({ link, name }) => (
-            <li>
+          navlinks.map(({ link, name, id }) => (
+            <li key={id}>
               <Link to={link}>{name}</Link>
             </li>
           ))}
