@@ -12,8 +12,8 @@ export const headData = {
 export const navbarData = {
   navlinks: [
     {
-      name: 'Hero',
-      link: '/#hero',
+      name: 'Home',
+      link: '/',
       id: nanoid(),
     },
     {

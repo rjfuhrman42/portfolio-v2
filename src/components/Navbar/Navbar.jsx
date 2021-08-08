@@ -1,22 +1,19 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'gatsby';
 import PortfolioContext from '../../context/context';
 
 function Navbar() {
+  let previousScroll = 0;
+  const [isShown, setIsShown] = useState(false);
   const { navbar } = useContext(PortfolioContext);
   const { navlinks } = navbar;
 
   useEffect(() => {
-    const nav = document.querySelector('.nav-bar'); // document is not available during server-side rendering, so put in a useEffect()
-
-    const topOfNav = nav && nav.offsetTop;
+    // document is not available during server-side rendering, so put in a useEffect()
 
     function fixNav() {
-      if (window.scrollY >= topOfNav) {
-        document.body.classList.add('fixed-nav');
-      } else {
-        document.body.classList.remove('fixed-nav');
-      }
+      setIsShown(previousScroll > window.scrollY);
+      previousScroll = window.scrollY;
     }
 
     window.addEventListener('scroll', fixNav);
@@ -27,7 +24,7 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className="nav-bar">
+    <nav className={`nav-bar ${isShown ? 'fixed-nav' : 'hidden'}`}>
       <ul className="nav-links">
         {navlinks && // if(navlinks is true) { *** display the array *** }
           navlinks.map(({ link, name, id }) => (

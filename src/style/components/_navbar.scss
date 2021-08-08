@@ -2,6 +2,8 @@
   background-color: black;
   width: 100%;
   z-index: 999;
+  position: fixed;
+  transition: top 0.25s ease;
 }
 
 .nav-links {
@@ -21,6 +23,10 @@
   color: $white-color;
 }
 
-body.fixed-nav .nav-bar {
-  position: fixed;
+.hidden {
+  top: -10%;
+}
+
+.fixed-nav {
+  top: 0%;
 }
