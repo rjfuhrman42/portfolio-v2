@@ -1,30 +1,36 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'gatsby';
 import PortfolioContext from '../../context/context';
 
 function Navbar() {
-  let previousScroll = 0;
-  const [isShown, setIsShown] = useState(false);
+  // let previousScroll = 0;
+  // const [isShown, setIsShown] = useState(true);
   const { navbar } = useContext(PortfolioContext);
   const { navlinks } = navbar;
 
-  useEffect(() => {
-    // document is not available during server-side rendering, so put in a useEffect()
+  const ResumeLink = (
+    <a className="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+      Resume
+    </a>
+  );
 
-    function fixNav() {
-      setIsShown(previousScroll > window.scrollY);
-      previousScroll = window.scrollY;
-    }
+  // useEffect(() => {
+  //   // document is not available during server-side rendering, so put in a useEffect()
 
-    window.addEventListener('scroll', fixNav);
+  //   function fixNav() {
+  //     setIsShown(previousScroll > window.scrollY);
+  //     previousScroll = window.scrollY;
+  //   }
 
-    return () => {
-      document.removeEventListener('scroll', fixNav);
-    };
-  }, []);
+  //   window.addEventListener('scroll', fixNav);
+
+  //   return () => {
+  //     document.removeEventListener('scroll', fixNav);
+  //   };
+  // }, []);
 
   return (
-    <nav className={`nav-bar ${isShown ? 'fixed-nav' : 'hidden'}`}>
+    <nav id="nav-bar">
       <ul className="nav-links">
         {navlinks && // if(navlinks is true) { *** display the array *** }
           navlinks.map(({ link, name, id }) => (
@@ -32,6 +38,7 @@ function Navbar() {
               <Link to={link}>{name}</Link>
             </li>
           ))}
+        <div>{ResumeLink}</div>
       </ul>
     </nav>
   );

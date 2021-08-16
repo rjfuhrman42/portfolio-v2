@@ -2,20 +2,15 @@ import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  title: '', // e.g: 'Name | Developer'
-  lang: '', // e.g: en, es, fr, jp
-  description: '', // e.g: Welcome to my website
+  title: 'Reid Fuhrman | Developer', // e.g: 'Name | Developer'
+  lang: 'en', // e.g: en, es, fr, jp
+  description: "Welcome to Reid Fuhrmans's personal portfolio", // e.g: Welcome to my website
 };
 
 // NAVBAR DATA
 
 export const navbarData = {
   navlinks: [
-    {
-      name: 'Home',
-      link: '/',
-      id: nanoid(),
-    },
     {
       name: 'Projects',
       link: '/#projects',
@@ -39,9 +34,9 @@ export const heroData = {
   title: "Hey, I'm",
   name: 'Reid Fuhrman',
   subtitle:
-    "I'm a self-taught web developer who has a passion for learning to and building beautiful, useful things.",
+    "I'm a self-taught web developer with a passion for learning to and building beautiful, useful things.",
   cta: '',
-  img: 'meteor.png',
+  img: 'planet.png',
 };
 
 // ABOUT DATA

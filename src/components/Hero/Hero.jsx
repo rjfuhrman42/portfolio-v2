@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
-import meteor from '../../images/meteor.png';
+import planet from '../../images/planet.png';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
@@ -34,7 +34,7 @@ const Header = () => {
               <p className="hero-subtitle">{subtitle}</p>
             </div>
             <div className="meteor-container">
-              <img src={meteor} alt="a blue flaming meteor" className="meteor" />
+              <img src={planet} alt="a blue flaming meteor" className="meteor" />
             </div>
           </div>
         </Fade>
