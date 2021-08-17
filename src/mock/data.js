@@ -93,23 +93,27 @@ export const footerData = {
   networks: [
     {
       id: nanoid(),
-      name: 'twitter',
+      name: 'Twitter',
+      icon: 'twitter',
       url: 'https://twitter.com/ReidFuhrman',
     },
     {
       id: nanoid(),
-      name: 'codepen',
-      url: 'https://codepen.io/reidjf',
-    },
-    {
-      id: nanoid(),
-      name: 'linkedin',
+      name: 'Linkedin',
+      icon: 'linkedin',
       url: 'https://www.linkedin.com/in/reid-fuhrman-73324b180/',
     },
     {
       id: nanoid(),
-      name: 'github',
+      name: 'Github',
+      icon: 'github',
       url: 'https://github.com/rjfuhrman42',
+    },
+    {
+      id: nanoid(),
+      name: 'Codepen',
+      icon: 'codepen',
+      url: 'https://codepen.io/reidjf',
     },
   ],
 };

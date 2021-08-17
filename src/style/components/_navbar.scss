@@ -11,14 +11,15 @@
   display: flex;
   align-items: center;
   justify-content: start;
-  margin: 0;
+  margin: 0 0em;
 }
 
 .nav-links li {
-  margin: 1.5em 3em;
+  margin: 2em 5em;
 }
 
-#nav-bar li a {
+#nav-bar li a,
+.resume-button {
   font-size: 24px;
   color: $white-color;
 }
@@ -29,4 +30,15 @@
 
 .fixed-nav {
   top: 0%;
+}
+
+.resume-button-container {
+  position: absolute;
+  right: 5em;
+}
+
+.resume-button {
+  background-color: $medium-purple-color;
+  padding: 0.35em 1.75em;
+  box-shadow: -3px 3px 0px 0px $light-purple-color;
 }

@@ -38,7 +38,7 @@ function Navbar() {
               <Link to={link}>{name}</Link>
             </li>
           ))}
-        <div>{ResumeLink}</div>
+        <li className="resume-button-container">{ResumeLink}</li>
       </ul>
     </nav>
   );
