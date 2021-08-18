@@ -5,6 +5,7 @@
   // padding: 15rem 0 10rem 0;
   // margin-top: -15rem;
   // margin-bottom: -1px;
+  padding: 14rem 0em;
   color: $white-color;
 
   @include respond(tab-land) {
@@ -15,6 +16,9 @@
   }
 
   .contact-wrapper {
+    display: flex;
+    justify-content: center;
+
     margin-top: 3.2rem;
     padding: 0 2rem;
     backface-visibility: hidden;
@@ -32,5 +36,27 @@
         font-size: 2rem;
       }
     }
+
+    h2 {
+      font-size: 4rem;
+      transition: color 0.2s ease;
+    }
   }
+}
+
+.stars-container {
+  margin: 0em 4em;
+}
+
+.purple-stars {
+  width: 7rem;
+}
+
+.contact-me {
+  color: white;
+}
+
+.contact-me:hover h2 {
+  transition: color 0.2s ease;
+  color: $medium-purple-color;
 }
