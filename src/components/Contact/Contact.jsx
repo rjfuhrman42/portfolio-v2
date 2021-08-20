@@ -31,7 +31,7 @@ const Contact = () => {
               <h2>Contact Me</h2>
             </a>
             <div className="stars-container">
-              <img src={stars} alt="a bunch of purple stars" className="purple-stars" />
+              <img src={stars} alt="a bunch of purple stars" className="purple-stars flipped" />
             </div>
           </div>
         </Fade>

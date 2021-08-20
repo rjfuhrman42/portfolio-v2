@@ -1,13 +1,12 @@
 .footer {
+  display: flex;
+  align-items: center;
   background-color: $dark-purple-color;
   color: $white-color;
   padding: 2.5rem 0;
   margin: 0em 1em 4em 1em;
   border-bottom: 3.25em solid $medium-purple-color;
   box-shadow: 0 3em 0 0 $light-purple-color;
-  @include respond(phone) {
-    border: 0px;
-  }
 
   &__text {
     color: darken(white, 50%);
@@ -41,7 +40,15 @@
 .social-links {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: start;
+
+  @include respond(phone) {
+    align-items: center;
+    height: 100%;
+
+    padding: 3em 0em;
+  }
 
   a {
     display: flex;
@@ -58,6 +65,16 @@
     &:hover {
       transform: translateY(-2px);
     }
+
+    @include respond(phone) {
+      flex: 0 0 43%;
+      font-size: 2.25rem;
+    }
+
+    @include respond(phone-xs) {
+      font-size: 1.75rem;
+      margin: 0.5em;
+    }
   }
   i {
     margin-left: 0.5em;
@@ -67,6 +84,10 @@
 .back-to-top {
   margin-left: auto;
   margin-right: 5.5em;
+
+  @include respond(phone) {
+    display: none;
+  }
 }
 
 .back-to-top div {

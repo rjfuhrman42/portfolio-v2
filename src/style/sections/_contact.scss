@@ -52,6 +52,10 @@
   width: 7rem;
 }
 
+.flipped {
+  transform: rotateZ(180deg);
+}
+
 .contact-me {
   color: white;
 }
