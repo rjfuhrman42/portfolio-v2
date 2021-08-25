@@ -23,6 +23,10 @@
     padding: 0 2rem;
     backface-visibility: hidden;
 
+    @include respond(phone) {
+      padding: 0;
+    }
+
     &__text {
       margin-bottom: 2.5rem;
     }
@@ -40,6 +44,13 @@
     h2 {
       font-size: 4rem;
       transition: color 0.2s ease;
+
+      @include respond(tab-port) {
+        font-size: 2.75rem;
+      }
+      @include respond(phone) {
+        font-size: 2rem;
+      }
     }
   }
 }
@@ -50,6 +61,14 @@
 
 .purple-stars {
   width: 7rem;
+
+  @include respond(tab-port) {
+    width: 5rem;
+  }
+
+  @include respond(phone) {
+    width: 4rem;
+  }
 }
 
 .flipped {
