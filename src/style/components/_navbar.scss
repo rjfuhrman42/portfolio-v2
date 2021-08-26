@@ -6,26 +6,79 @@
   transition: top 0.25s ease;
 }
 
+#nav-bar .hamburger-react {
+  display: none;
+  margin: 0.5em 2em;
+  float: right;
+  @include respond(tab-land) {
+    font-size: 18px;
+    display: inline;
+  }
+
+  @include respond(phone) {
+    margin: 0.5em;
+  }
+  z-index: 998;
+}
+
+.mobile-menu {
+  position: fixed;
+  padding-top: 10em;
+  background: #310449;
+  border-left: 1.25em solid $medium-purple-color;
+  box-shadow: -1em 0 0 0 $light-purple-color;
+  right: -103%;
+  height: 100%;
+  width: 60%;
+  z-index: 1;
+  transition: right 0.25s ease;
+
+  @include respond(phone) {
+    width: 100%;
+  }
+}
+
+.open {
+  right: -2%;
+  transition: right 0.25s ease;
+}
+
+.mobile-nav-links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.mobile-nav-links li {
+  margin: 1em 6em;
+  padding: 2em 0em;
+  width: 90%;
+  text-align: center;
+  background-color: $dark-purple-color;
+}
+
 .nav-links {
   list-style-type: none;
   display: flex;
   align-items: center;
   justify-content: start;
   margin: 0 0em;
+  @include respond(tab-land) {
+    font-size: 18px;
+    display: none;
+  }
 }
 
 .nav-links li {
-  margin: 2em 5em;
+  margin: 2em 4em;
 }
 
 #nav-bar li a,
 .resume-button {
   font-size: 24px;
   color: $white-color;
-
-  @include respond(tab-land) {
-    font-size: 18px;
-  }
 }
 
 .hidden {
@@ -45,4 +98,10 @@
   background-color: $medium-purple-color;
   padding: 0.35em 1.75em;
   box-shadow: -3px 3px 0px 0px $light-purple-color;
+}
+
+.mobile-nav-links .resume-button {
+  background-color: transparent;
+  padding: 0;
+  box-shadow: 0 0 0 0;
 }

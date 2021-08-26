@@ -59,7 +59,7 @@
     font-size: 2.5rem;
     // width: 5rem;
     // height: 5rem;
-    margin-left: 4em;
+    margin: 0em 2em;
     transition: all 0.2s ease-in;
 
     &:hover {
@@ -90,7 +90,10 @@
   margin-left: auto;
   margin-right: 5.5em;
 
-  @include respond(phone) {
+  a {
+    font-size: 1.75rem;
+  }
+  @include respond(tab-land) {
     display: none;
   }
 }
