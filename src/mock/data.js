@@ -43,10 +43,11 @@ export const heroData = {
 export const aboutData = {
   img: 'reid-small.jpg',
   paragraphOne:
-    'By day I work as a Computer Scientist for the United States Airforce in Warner Robins, Georgia, with day to day duties including some light web development and unit testing, as well as verification and validation of software, software tests, and live testing events. (ehhh this needs work)',
+    "Hey there! I'm a Computer Scientist at Robins Air Force Base where I am currently involved in independent verification and validation of software documentation and testing.",
   paragraphTwo:
-    'By night I practice web development, building personal projects, as well as getting involved and contributing to community projects, most recently being the FreeCodeCamp Nashville Chapter. Outside of development I love to skateboard, cook Asian cuisine, and go backpacking.',
-  paragraphThree: '',
+    'By night I practice web development, building personal projects, as well as getting involved and contributing to community projects, most recently being the FreeCodeCamp Nashville Chapter. I love creating websites that are beautiful, functional, and accessible to all. My skills primarily lie in Front-end Development, but I seek involvement in all aspects of development with the goal to be a Full-stack Developer',
+  paragraphThree:
+    ' Outside of development I love to skateboard, cook Asian cuisine, and go backpacking.',
   resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
 };
 

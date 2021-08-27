@@ -39,7 +39,7 @@
       // text-align: center;
     }
     @include respond(phone) {
-      font-size: 3.75rem;
+      font-size: 4.75rem;
       margin-bottom: 2.2rem;
     }
     @include respond(phone-xs) {
@@ -133,11 +133,6 @@
     @include respond(tab-port) {
       height: 30em;
       width: 30em;
-    }
-
-    @include respond(phone) {
-      height: 25em;
-      width: 25em;
     }
 
     @include respond(phone-xs) {
