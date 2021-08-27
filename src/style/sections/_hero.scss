@@ -108,6 +108,10 @@
     align-items: center;
     justify-content: center;
     padding: 1em;
+
+    @include respond(phone) {
+      margin-bottom: 5rem;
+    }
   }
 
   .hero-text,
@@ -133,11 +137,6 @@
     @include respond(tab-port) {
       height: 30em;
       width: 30em;
-    }
-
-    @include respond(phone) {
-      height: 27em;
-      width: 27em;
     }
 
     @include respond(phone-xs) {
