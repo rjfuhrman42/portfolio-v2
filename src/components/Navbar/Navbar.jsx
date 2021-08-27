@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { Divide as Hamburger } from 'hamburger-react';
+import { Squash as Hamburger } from 'hamburger-react';
 import { Link } from 'gatsby';
 import PortfolioContext from '../../context/context';
 
@@ -15,6 +15,13 @@ function Navbar() {
       Resume
     </a>
   );
+
+  function handleClick() {
+    if (!isOpen) document.querySelector('body').style.overflow = 'hidden';
+    else document.querySelector('body').style.overflow = 'auto';
+
+    setIsOpen((prev) => !prev);
+  }
 
   // useEffect(() => {
   //   // document is not available during server-side rendering, so put in a useEffect()
@@ -35,16 +42,16 @@ function Navbar() {
     <nav id="nav-bar">
       <Hamburger
         toggled={isOpen}
-        toggle={() => setIsOpen((prev) => !prev)}
+        toggle={() => handleClick()}
         size={36}
-        color={isOpen ? '#bc6ff1' : '#892cdc'}
+        color={isOpen ? '#bc6ff1' : 'white'}
       />
       <div className={`mobile-menu ${isOpen ? 'open' : ''}`}>
         <ul className="mobile-nav-links">
           {navlinks && // if(navlinks is true) { *** display the array *** }
             navlinks.map(({ link, name, id }) => (
               <li key={id}>
-                <Link onClick={() => setIsOpen((prev) => !prev)} to={link}>
+                <Link onClick={() => handleClick()} to={link}>
                   {name}
                 </Link>
               </li>

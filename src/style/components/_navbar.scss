@@ -8,7 +8,7 @@
 
 #nav-bar .hamburger-react {
   display: none;
-  margin: 0.5em 2em;
+  margin: 0.5em 0.8em;
   float: right;
   @include respond(tab-land) {
     font-size: 18px;
