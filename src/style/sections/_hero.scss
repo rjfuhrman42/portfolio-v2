@@ -136,8 +136,8 @@
     }
 
     @include respond(phone) {
-      height: 28em;
-      width: 28em;
+      height: 25em;
+      width: 25em;
     }
 
     @include respond(phone-xs) {
