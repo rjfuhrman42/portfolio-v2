@@ -44,7 +44,7 @@ function Navbar() {
         toggled={isOpen}
         toggle={() => handleClick()}
         size={36}
-        color={isOpen ? '#bc6ff1' : '#892cdc'}
+        color={isOpen ? '#bc6ff1' : '#FFF'}
       />
       <div className={`mobile-menu ${isOpen ? 'open' : ''}`}>
         <ul className="mobile-nav-links">
