@@ -1,10 +1,18 @@
-#nav-bar {
-  background: transparent;
+.nav-bar {
+  background: rgba(0, 0, 0, 0.829);
   width: 100%;
   z-index: 999;
   position: fixed;
   transition: top 0.25s ease;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  transition: background-color 0.1s ease;
+}
+
+.color-change {
+  transition: background-color 0.1s ease;
   box-shadow: 0em 0.25em 0.5em 0em #12071d;
+  background: $darkest-purple-translucent;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
@@ -66,7 +74,7 @@
   list-style-type: none;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   margin: 0 0em;
   @include respond(tab-land) {
     font-size: 18px;
