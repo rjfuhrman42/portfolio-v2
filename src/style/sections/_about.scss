@@ -18,6 +18,12 @@
     padding-top: 10em;
   }
 
+  img {
+    @include respond(tab-port) {
+      object-position: top !important;
+    }
+  }
+
   .container {
     max-width: 1000px;
 
@@ -36,7 +42,7 @@
     flex-direction: row;
 
     @include respond(tab-port) {
-      flex-direction: column;
+      flex-direction: column-reverse;
     }
 
     @include respond(phone) {
@@ -44,6 +50,11 @@
 
     .gatsby-image-wrapper {
       height: 539px !important;
+
+      @include respond(tab-port) {
+        width: 350px !important;
+        height: 300px !important;
+      }
     }
 
     .section-title {
@@ -57,10 +68,9 @@
       height: 100%;
       align-items: center;
       justify-content: center;
-
+      background: black;
       @include respond(tab-port) {
         padding-bottom: 6.4rem;
-        display: none;
       }
       @include respond(tab-land) {
         height: 100%;

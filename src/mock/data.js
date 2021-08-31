@@ -59,7 +59,7 @@ export const projectsData = [
     title: 'FreeCodeCamp Nashville Website',
     info: 'The official website of the FreeCodeCamp Nashville community',
     info2: '',
-    url: 'https://fcc-nashville.netlify.app/',
+    url: 'https://www.nashvillefcc.com/',
     repo: 'https://github.com/nashvillefcc/', // if no repo, the button will not show up
   },
   {
