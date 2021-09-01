@@ -17,6 +17,9 @@
     clip-path: none;
     padding-top: 10em;
   }
+  @include respond(phone-xs) {
+    padding: 0;
+  }
 
   img {
     @include respond(tab-port) {
@@ -50,6 +53,10 @@
 
     .gatsby-image-wrapper {
       height: 539px !important;
+      background: $light-purple-color;
+      img {
+        mix-blend-mode: multiply;
+      }
 
       @include respond(tab-port) {
         width: 350px !important;

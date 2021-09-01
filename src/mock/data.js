@@ -55,12 +55,12 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'freecodecamp2.jpg',
     title: 'FreeCodeCamp Nashville Website',
     info: 'The official website of the FreeCodeCamp Nashville community',
     info2: '',
     url: 'https://www.nashvillefcc.com/',
-    repo: 'https://github.com/nashvillefcc/', // if no repo, the button will not show up
+    repo: 'https://github.com/nashvillefcc/nashvillefcc2020website', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
@@ -75,7 +75,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'lift-tracker.jpg',
     title: 'Lift Tracker',
-    info: '',
+    info: 'A web app for searching excerises and tracking which ones you did, or will do, on a personal calendar.',
     info2: '',
     url: 'https://lift-tracker-99bdc.web.app/',
     repo: 'https://github.com/rjfuhrman42/lift-tracker', // if no repo, the button will not show up
