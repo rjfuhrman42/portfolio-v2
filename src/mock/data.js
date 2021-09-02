@@ -73,6 +73,15 @@ export const projectsData = [
   },
   {
     id: nanoid(),
+    img: 'memory-game.jpg',
+    title: 'Danganronpa 2 Themed Memory Game',
+    info: 'Test your memory with this fanmade danganronpa 2 themed card flipping game! Match all 36 cards to win!',
+    info2: '',
+    url: 'https://dangan2-memory-game.web.app/',
+    repo: 'https://github.com/rjfuhrman42/danganronpa2-memory-card-game', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
     img: 'lift-tracker.jpg',
     title: 'Lift Tracker',
     info: 'A web app for searching excerises and tracking which ones you did, or will do, on a personal calendar.',
