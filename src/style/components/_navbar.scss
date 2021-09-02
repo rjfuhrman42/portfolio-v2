@@ -80,10 +80,28 @@
     font-size: 18px;
     display: none;
   }
+
+  li {
+    border: 2px solid transparent;
+    transition: border 0.2s ease;
+  }
+
+  li:not(.resume-button-container):hover {
+    background-color: $dark-purple-color;
+    border-left: 0.5em solid $light-purple-color;
+    border-bottom: 0.5em solid $medium-purple-color;
+    border-right: 0.1em solid $light-purple-color;
+    border-top: 0.1em solid $light-purple-color;
+    transition: border 0.2s ease;
+  }
 }
 
 .nav-links li {
   margin: 2em 4em;
+
+  a:not(.resume-button) {
+    padding: 0.5em;
+  }
 }
 
 #nav-bar li a,
