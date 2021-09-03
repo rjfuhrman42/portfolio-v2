@@ -34,7 +34,7 @@ export const heroData = {
   title: "Hey, I'm",
   name: 'Reid Fuhrman',
   subtitle:
-    "I'm a self-taught web developer with a passion for learning to and building beautiful, useful things.",
+    "I'm a self-taught web developer with a passion for learning to and building beautiful, useful things on the web.",
   cta: '',
   img: 'planet.png',
 };
@@ -57,7 +57,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'freecodecamp2.jpg',
     title: 'FreeCodeCamp Nashville Website',
-    info: 'The official website of the FreeCodeCamp Nashville community',
+    info: 'The official website of the FreeCodeCamp Nashville Chapter where I am part of the team who developed it!',
     info2: '',
     url: 'https://www.nashvillefcc.com/',
     repo: 'https://github.com/nashvillefcc/nashvillefcc2020website', // if no repo, the button will not show up
