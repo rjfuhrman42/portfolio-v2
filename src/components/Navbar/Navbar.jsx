@@ -37,21 +37,6 @@ function Navbar() {
     document.addEventListener('scroll', () => handleScroll());
   }, []);
 
-  // useEffect(() => {
-  //   // document is not available during server-side rendering, so put in a useEffect()
-
-  //   function fixNav() {
-  //     setIsShown(previousScroll > window.scrollY);
-  //     previousScroll = window.scrollY;
-  //   }
-
-  //   window.addEventListener('scroll', fixNav);
-
-  //   return () => {
-  //     document.removeEventListener('scroll', fixNav);
-  //   };
-  // }, []);
-
   return (
     <nav id="nav-bar" className={`nav-bar ${isPastHeroSection ? 'color-change' : ''}`}>
       <Hamburger
