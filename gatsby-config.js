@@ -1,4 +1,10 @@
 module.exports = {
+  siteMetadata: {
+    title: 'Developer', // e.g: 'Name | Developer'
+    lang: 'en', // e.g: en, es, fr, jp
+    description: "Welcome to Reid Fuhrmans's personal portfolio", // e.g: Welcome to my website
+    baseUrl: 'https://reidfuhrman.com',
+  },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
