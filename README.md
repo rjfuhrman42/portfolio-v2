@@ -5,7 +5,7 @@
     reidfuhrman.com
 </h1>
 
-My personal portfolio website <a href="reidfuhrman.com">reidfuhrman.com</a>
+My personal portfolio website <a href="https://www.reidfuhrman.com">reidfuhrman.com</a>
 ![image](static/embedPreviewImage.jpg?raw=true "Preview")
 
 ## Getting Started 🚀
