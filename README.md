@@ -2,9 +2,7 @@
   <img alt="Logo" src="src/images/planet.png" width="100" />
 </div>
 <h1 align="center">
-  <a href="https://reidfuhrman.com/">
     reidfuhrman.com
-  </a>
 </h1>
 
 ![image](src/images/screenshot1.jpg?raw=true "Preview")
