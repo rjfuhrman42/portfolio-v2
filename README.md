@@ -2,8 +2,8 @@
   <img alt="Logo" src="src/images/gamepad-logo.png" width="100" />
 </div>
 <h1 align="center">
-  <a href="https://react-games-list.web.app/">
-    React Games List
+  <a href="https://reidfuhrman.com/">
+    reidfuhrman.com
   </a>
 </h1>
 
