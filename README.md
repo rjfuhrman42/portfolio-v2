@@ -5,7 +5,7 @@
     reidfuhrman.com
 </h1>
 
-![image](src/images/screenshot1.jpg?raw=true "Preview")
+![image](static/embedPreviewImage.jpg?raw=true "Preview")
 
 ## Getting Started 🚀
 
