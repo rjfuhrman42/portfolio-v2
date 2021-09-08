@@ -7,7 +7,7 @@
 
 My personal portfolio website <a href="https://www.reidfuhrman.com">reidfuhrman.com</a>
 <p align="center">
-  <a href="https://app.netlify.com/sites/reidfuhrman/deploys" target="_blank">
+  <a href="https://app.netlify.com/sites/brave-agnesi-3e8769/deploys" target="_blank">
     <img src="https://api.netlify.com/api/v1/badges/63afec8c-0cda-4beb-bc8c-856845dca686/deploy-status" alt="Netlify Status" />
   </a>
 </p>
