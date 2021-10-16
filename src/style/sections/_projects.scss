@@ -1,6 +1,8 @@
 #projects {
   background-color: $darkest-purple-color;
   color: $white-color;
+  position: relative;
+  z-index: 2;
 
   @include respond(tab-land) {
     margin-top: 0;

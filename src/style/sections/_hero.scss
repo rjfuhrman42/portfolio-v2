@@ -18,6 +18,72 @@
 
   // If you want to set a background image on the hero section, uncomment these with yout custom image
 
+  $stars-small: create-box-shadows(200);
+  $stars-medium: create-box-shadows(50);
+  $stars-big: create-box-shadows(30);
+
+  .stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+  }
+
+  .small {
+    height: 1px;
+    width: 1px;
+    box-shadow: $stars-small;
+    animation: moveStars 150s linear infinite;
+
+    &:after {
+      position: absolute;
+      content: '';
+      height: 1px;
+      width: 1px;
+      top: -100vh;
+      background: transparent;
+      box-shadow: $stars-small;
+      z-index: 0;
+    }
+  }
+
+  .medium {
+    height: 2px;
+    width: 2px;
+    box-shadow: $stars-medium;
+
+    animation: moveStars 100s linear infinite;
+
+    &:after {
+      position: absolute;
+      content: '';
+      height: 2px;
+      width: 2px;
+      top: -100vh;
+      background: transparent;
+      box-shadow: $stars-medium;
+      z-index: 0;
+    }
+  }
+
+  .big {
+    height: 3px;
+    width: 3px;
+    box-shadow: $stars-big;
+    animation: moveStars 50s linear infinite;
+
+    &:after {
+      position: absolute;
+      content: '';
+      height: 3px;
+      width: 3px;
+      top: -100vh;
+      background: transparent;
+      box-shadow: $stars-big;
+      z-index: 0;
+    }
+  }
+
   /* background: url("/src/assets/[your-image].png");
   background-position: center;
   background-size: cover; */
@@ -88,6 +154,10 @@
     font-size: 2.8rem;
     text-align: left;
 
+    @include respond(tab-land) {
+      font-size: 2.25rem;
+    }
+
     @include respond(tab-port) {
       font-size: 2.25rem;
     }
@@ -123,7 +193,7 @@
     display: flex;
     flex-direction: row;
 
-    @include respond(phone) {
+    @include respond(tab-port) {
       flex-direction: column;
       align-items: center;
       justify-content: center;
@@ -160,18 +230,28 @@
     width: 40em;
     border-radius: 50%;
     @include respond(tab-land) {
-      height: 32em;
-      width: 32em;
+      height: 33em;
+      width: 33em;
     }
 
     @include respond(tab-port) {
-      height: 27em;
-      width: 27em;
+      height: 30em;
+      width: 30em;
     }
 
     @include respond(phone-xs) {
       height: 20em;
       width: 20em;
     }
+  }
+}
+
+@keyframes moveStars {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(100vh);
   }
 }

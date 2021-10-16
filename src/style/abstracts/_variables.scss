@@ -26,3 +26,11 @@ $dark-blue-color: #0d7377;
 $default-font-size: 1.6rem;
 $big-font-size: 4rem;
 $mid-font-size: 2.5rem;
+
+@function create-box-shadows($num) {
+  $cur: '#{random(100)}vw #{random(100)}vh #{$light-purple-color}';
+  @for $i from 2 to $num {
+    $cur: '#{$cur} , #{random(100)}vw #{random(100)}vh #{$light-purple-color}';
+  }
+  @return unquote($cur);
+}

@@ -23,6 +23,9 @@ const Header = () => {
   return (
     <section id="hero" className="jumbotron">
       <Container>
+        <div className="stars small" />
+        <div className="stars medium" />
+        <div className="stars big" />
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <div className="title-and-image-container">
             <div className="hero-text">
