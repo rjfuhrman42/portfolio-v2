@@ -34,7 +34,7 @@ export const heroData = {
   title: "Hey, I'm",
   name: 'Reid Fuhrman',
   subtitle:
-    "I'm a self-taught web developer with a passion for learning to and building beautiful, useful things on the web.",
+    "I'm a self-taught web developer with a passion for learning and building beautiful, useful things on the web.",
   cta: '',
   img: 'planet.png',
 };

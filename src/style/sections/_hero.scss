@@ -17,7 +17,9 @@
   background-color: black;
 
   // If you want to set a background image on the hero section, uncomment these with yout custom image
-
+  $stars-small-mobile: create-box-shadows(50);
+  $stars-medium-mobile: create-box-shadows(30);
+  $stars-big-mobile: create-box-shadows(15);
   $stars-small: create-box-shadows(200);
   $stars-medium: create-box-shadows(50);
   $stars-big: create-box-shadows(30);
@@ -45,6 +47,10 @@
       box-shadow: $stars-small;
       z-index: 0;
     }
+
+    @include respond(phone) {
+      box-shadow: $stars-small-mobile;
+    }
   }
 
   .medium {
@@ -52,7 +58,7 @@
     width: 2px;
     box-shadow: $stars-medium;
 
-    animation: moveStars 100s linear infinite;
+    animation: moveStars 75s linear infinite;
 
     &:after {
       position: absolute;
@@ -64,13 +70,17 @@
       box-shadow: $stars-medium;
       z-index: 0;
     }
+
+    @include respond(phone) {
+      box-shadow: $stars-medium-mobile;
+    }
   }
 
   .big {
     height: 3px;
     width: 3px;
     box-shadow: $stars-big;
-    animation: moveStars 50s linear infinite;
+    animation: moveStars 20s linear infinite;
 
     &:after {
       position: absolute;
@@ -81,6 +91,10 @@
       background: transparent;
       box-shadow: $stars-big;
       z-index: 0;
+    }
+
+    @include respond(phone) {
+      box-shadow: $stars-big-mobile;
     }
   }
 
