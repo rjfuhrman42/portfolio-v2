@@ -15,7 +15,7 @@
   right: 0;
   z-index: -1;
   background-color: black;
-
+  animation: rotateSurface 5s ease-in-out infinite;
   // If you want to set a background image on the hero section, uncomment these with yout custom image
   $stars-small-mobile: create-box-shadows(50);
   $stars-medium-mobile: create-box-shadows(30);
@@ -243,6 +243,9 @@
     height: 40em;
     width: 40em;
     border-radius: 50%;
+
+    box-shadow: 0px 0px 20px 5px $dark-purple-color;
+
     @include respond(tab-land) {
       height: 33em;
       width: 33em;
@@ -260,6 +263,44 @@
   }
 }
 
+.meteor-container::before,
+.meteor-container::after {
+  height: 40em;
+  width: 55em;
+  position: absolute;
+  content: '';
+  background: transparent;
+  border-radius: 50%;
+  animation: moveRings 10s linear infinite;
+
+  @include respond(tab-land) {
+    width: 45em;
+  }
+
+  @include respond(tab-port) {
+    width: 43em;
+  }
+
+  @include respond(phone-xs) {
+    width: 35em;
+  }
+}
+
+.meteor-container::before {
+  border: 5px solid $light-purple-color;
+  z-index: -1;
+}
+
+.meteor-container::after {
+  border-bottom: 5px solid $light-purple-color;
+  // box-shadow: 0px 0px 20px 5px $light-purple-color;
+}
+
+.meteor-container img {
+  object-position: left;
+  object-fit: fill;
+}
+
 @keyframes moveStars {
   from {
     transform: translateY(0px);
@@ -267,5 +308,29 @@
 
   to {
     transform: translateY(100vh);
+  }
+}
+
+@keyframes rotateSurface {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes moveRings {
+  0% {
+    transform: rotateZ(-45deg) rotateX(80deg) translateX(-5px);
+  }
+  50% {
+    transform: rotateZ(-42deg) rotateX(80deg) translateX(10px);
+  }
+  100% {
+    transform: rotateZ(-45deg) rotateX(80deg) translateX(-5px);
   }
 }

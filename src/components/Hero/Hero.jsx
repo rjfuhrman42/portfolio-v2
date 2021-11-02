@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import PortfolioContext from '../../context/context';
-import planet from '../../images/planet.png';
+import planet from '../../images/layered-steps-haikei.png';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
