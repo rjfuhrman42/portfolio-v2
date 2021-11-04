@@ -104,7 +104,7 @@
 
   @include respond(phone) {
     padding: 0rem $default-font-size;
-    padding-top: 8em;
+    padding-top: 6.5em;
   }
 
   @include respond(phone-xs) {
@@ -149,7 +149,7 @@
       // text-align: center;
     }
     @include respond(phone) {
-      font-size: 4.75rem;
+      font-size: 4.5rem;
       margin-bottom: 2.2rem;
     }
     @include respond(phone-xs) {
@@ -251,9 +251,9 @@
       width: 33em;
     }
 
-    @include respond(tab-port) {
-      height: 30em;
-      width: 30em;
+    @include respond(phone) {
+      height: 29em;
+      width: 29em;
     }
 
     @include respond(phone-xs) {
@@ -274,10 +274,10 @@
   animation: moveRings 10s linear infinite;
 
   @include respond(tab-land) {
-    width: 45em;
+    width: 47em;
   }
 
-  @include respond(tab-port) {
+  @include respond(phone) {
     width: 43em;
   }
 
@@ -287,12 +287,12 @@
 }
 
 .meteor-container::before {
-  border: 5px solid $light-purple-color;
+  border: 15px solid $light-purple-color;
   z-index: -1;
 }
 
 .meteor-container::after {
-  border-bottom: 5px solid $light-purple-color;
+  border-bottom: 20px solid $light-purple-color;
   // box-shadow: 0px 0px 20px 5px $light-purple-color;
 }
 
@@ -313,13 +313,13 @@
 
 @keyframes rotateSurface {
   0% {
-    transform: translateY(-5px);
+    transform: translateY(7px);
   }
   50% {
-    transform: translateY(5px);
+    transform: translateY(0px);
   }
   100% {
-    transform: translateY(-5px);
+    transform: translateY(7px);
   }
 }
 
