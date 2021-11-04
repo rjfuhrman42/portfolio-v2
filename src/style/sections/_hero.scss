@@ -24,6 +24,12 @@
   $stars-medium: create-box-shadows(50);
   $stars-big: create-box-shadows(30);
 
+  .container {
+    @include respond(tab-land) {
+      max-width: 1000px !important;
+    }
+  }
+
   .stars {
     position: absolute;
     top: 0;
@@ -142,7 +148,7 @@
     text-align: left;
 
     @include respond(tab-land) {
-      font-size: 6.5rem;
+      font-size: 6rem;
     }
     @include respond(tab-port) {
       font-size: 4.65rem;
@@ -216,6 +222,14 @@
 
   .hero-text {
     flex-direction: column;
+
+    @include respond(tab-land) {
+      margin-right: 1.5em;
+    }
+
+    @include respond(phone) {
+      margin-right: 0em;
+    }
   }
 
   .meteor-container {
