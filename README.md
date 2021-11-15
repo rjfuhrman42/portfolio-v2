@@ -15,7 +15,7 @@
   </a>
 </p>
 
-![image](static/embedPreviewImage.jpg?raw=true "Preview")
+![image](static/embedPreviewImage.png?raw=true "Preview")
 
 ## Getting Started 🚀
 
