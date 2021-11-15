@@ -11,7 +11,7 @@ const puppeteer = require('puppeteer');
   });
 
   await page
-    .goto('http://localhost:8000')
+    .goto('https://reidfuhrman.com')
     .then(() => page.waitForTimeout(1000))
     .then(async () => page.screenshot({ path: '../static/embedPreviewImage.png' }));
 
