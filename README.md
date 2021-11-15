@@ -15,7 +15,7 @@
   </a>
 </p>
 
-![image](static/embedPreviewImage.jpg?raw=true "Preview")
+![image](static/embedPreviewImage.png?raw=true 'Preview')
 
 ## Getting Started 🚀
 
@@ -45,7 +45,7 @@ yarn@v1.21.1 or higher
 
 From your command line
 
-```bash
+````bash
 # Clone this repository
 $ git clone https://github.com/rjfuhrman42/portfolio-v2/
 
@@ -59,7 +59,7 @@ $ npm install
 
 # Start development server
 $ npm run develop
-```
+````
 
 Using Yarn:
 
