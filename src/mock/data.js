@@ -32,7 +32,7 @@ export const navbarData = {
 // HERO DATA
 export const heroData = {
   title: "Hey, I'm",
-  name: 'Reid Fuhrman',
+  name: 'Reid Fuhrman!',
   subtitle:
     "I'm a self-taught web developer with a passion for learning and building beautiful, useful things on the web.",
   cta: '',
