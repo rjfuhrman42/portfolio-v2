@@ -25,6 +25,7 @@
   $stars-big: create-box-shadows(30);
 
   .container {
+    margin-top: 5em;
     @include respond(tab-land) {
       max-width: 1000px !important;
     }
