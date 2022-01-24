@@ -14,7 +14,7 @@ function Navbar() {
   const ResumeLink = (
     <a
       className="resume-button"
-      href="/reid_fuhrman_resume_2021.pdf"
+      href="/reid_fuhrman_resume_2022.pdf"
       target="_blank"
       rel="noopener noreferrer"
     >
