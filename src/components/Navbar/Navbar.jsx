@@ -70,6 +70,11 @@ function Navbar() {
               <Link to={link}>{name}</Link>
             </li>
           ))}
+        <li>
+          <a href="https://blog.reidfuhrman.com" target="_blank" rel="noopener noreferrer">
+            Blog
+          </a>
+        </li>
         <li className="resume-button-container">{ResumeLink}</li>
       </ul>
     </nav>
