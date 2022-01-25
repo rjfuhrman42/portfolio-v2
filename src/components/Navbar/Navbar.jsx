@@ -22,6 +22,14 @@ function Navbar() {
     </a>
   );
 
+  const BlogLink = (
+    <li>
+      <a href="https://blog.reidfuhrman.com" target="_blank" rel="noopener noreferrer">
+        Blog
+      </a>
+    </li>
+  );
+
   function handleClick() {
     if (!isOpen) document.querySelector('body').style.overflow = 'hidden';
     else document.querySelector('body').style.overflow = 'auto';
@@ -60,6 +68,7 @@ function Navbar() {
                 </Link>
               </li>
             ))}
+          {BlogLink}
           <li id="resume-item">{ResumeLink}</li>
         </ul>
       </div>
@@ -70,11 +79,7 @@ function Navbar() {
               <Link to={link}>{name}</Link>
             </li>
           ))}
-        <li>
-          <a href="https://blog.reidfuhrman.com" target="_blank" rel="noopener noreferrer">
-            Blog
-          </a>
-        </li>
+        {BlogLink}
         <li className="resume-button-container">{ResumeLink}</li>
       </ul>
     </nav>
